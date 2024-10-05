@@ -24,21 +24,15 @@ namespace PrimerEntregaClub
 
         private void controlUsuario()
         {
-            if (txtUsuario.Text.Trim() != string.Empty && txtUsuario.Text.All(Char.IsNumber))
+            if (txtUsuario.Text.Trim() != string.Empty)
             {
                 btnIngresar.Enabled = true;
                 errorProvider1.SetError(txtUsuario, "");
             }
             else
             {
-                if (!(txtUsuario.Text.All(Char.IsNumber)))
-                {
-                    errorProvider1.SetError(txtUsuario, "El usuario solo debe contener números");
-                }
-                else
-                {
-                    errorProvider1.SetError(txtUsuario, "Debe introducir su usuario");
-                }
+                errorProvider1.SetError(txtUsuario, "Debe introducir su usuario");
+                
                 btnIngresar.Enabled = false;
                 txtUsuario.Focus();
             }
