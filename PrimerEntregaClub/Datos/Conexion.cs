@@ -17,7 +17,7 @@ namespace PrimerEntregaClub.Datos
 
         private Conexion() //asignamos valores a las variables de la conexión
         {
-            this.baseDatos = "Proyecto";
+            this.baseDatos = "instituto";
             this.servidor = "localhost";
             this.puerto = "3306";
             this.usuario = "root";
@@ -59,3 +59,4 @@ namespace PrimerEntregaClub.Datos
 
     }
 }
+
