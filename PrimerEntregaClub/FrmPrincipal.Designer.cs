@@ -34,17 +34,19 @@
             btnListar = new System.Windows.Forms.Button();
             btnSalir = new System.Windows.Forms.Button();
             btnActividad = new System.Windows.Forms.Button();
+            btnDetallar = new System.Windows.Forms.Button();
+            btnAsociar = new System.Windows.Forms.Button();
             SuspendLayout();
             // 
             // btnRegistrar
             // 
             btnRegistrar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             btnRegistrar.ForeColor = System.Drawing.Color.DodgerBlue;
-            btnRegistrar.Location = new System.Drawing.Point(104, 110);
+            btnRegistrar.Location = new System.Drawing.Point(104, 89);
             btnRegistrar.Name = "btnRegistrar";
             btnRegistrar.Size = new System.Drawing.Size(200, 76);
             btnRegistrar.TabIndex = 0;
-            btnRegistrar.Text = "REGISTRAR SOCIO";
+            btnRegistrar.Text = "REGISTRAR CLIENTE";
             btnRegistrar.UseVisualStyleBackColor = true;
             btnRegistrar.Click += btnRegistrar_Click;
             // 
@@ -62,18 +64,19 @@
             // 
             btnPagar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             btnPagar.ForeColor = System.Drawing.Color.DodgerBlue;
-            btnPagar.Location = new System.Drawing.Point(104, 235);
+            btnPagar.Location = new System.Drawing.Point(104, 218);
             btnPagar.Name = "btnPagar";
             btnPagar.Size = new System.Drawing.Size(200, 76);
             btnPagar.TabIndex = 7;
             btnPagar.Text = "PAGAR";
             btnPagar.UseVisualStyleBackColor = true;
+            btnPagar.Click += btnPagar_Click;
             // 
             // btnListar
             // 
             btnListar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             btnListar.ForeColor = System.Drawing.Color.DodgerBlue;
-            btnListar.Location = new System.Drawing.Point(367, 110);
+            btnListar.Location = new System.Drawing.Point(367, 89);
             btnListar.Name = "btnListar";
             btnListar.Size = new System.Drawing.Size(200, 76);
             btnListar.TabIndex = 8;
@@ -85,7 +88,7 @@
             btnSalir.BackColor = System.Drawing.SystemColors.ButtonShadow;
             btnSalir.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             btnSalir.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            btnSalir.Location = new System.Drawing.Point(577, 334);
+            btnSalir.Location = new System.Drawing.Point(551, 18);
             btnSalir.Name = "btnSalir";
             btnSalir.Size = new System.Drawing.Size(83, 36);
             btnSalir.TabIndex = 9;
@@ -97,19 +100,42 @@
             // 
             btnActividad.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             btnActividad.ForeColor = System.Drawing.Color.DodgerBlue;
-            btnActividad.Location = new System.Drawing.Point(367, 235);
+            btnActividad.Location = new System.Drawing.Point(367, 334);
             btnActividad.Name = "btnActividad";
             btnActividad.Size = new System.Drawing.Size(200, 76);
             btnActividad.TabIndex = 10;
             btnActividad.Text = "INSCRIBIR EN ACTIVIDAD";
             btnActividad.UseVisualStyleBackColor = true;
-            btnActividad.Click += button1_Click;
+            // 
+            // btnDetallar
+            // 
+            btnDetallar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            btnDetallar.ForeColor = System.Drawing.Color.DodgerBlue;
+            btnDetallar.Location = new System.Drawing.Point(367, 218);
+            btnDetallar.Name = "btnDetallar";
+            btnDetallar.Size = new System.Drawing.Size(200, 76);
+            btnDetallar.TabIndex = 11;
+            btnDetallar.Text = "EMITIR DATOS CLIENTE";
+            btnDetallar.UseVisualStyleBackColor = true;
+            // 
+            // btnAsociar
+            // 
+            btnAsociar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            btnAsociar.ForeColor = System.Drawing.Color.DodgerBlue;
+            btnAsociar.Location = new System.Drawing.Point(104, 334);
+            btnAsociar.Name = "btnAsociar";
+            btnAsociar.Size = new System.Drawing.Size(200, 76);
+            btnAsociar.TabIndex = 12;
+            btnAsociar.Text = "ASOCIAR CLIENTE";
+            btnAsociar.UseVisualStyleBackColor = true;
             // 
             // frmPrincipal
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            ClientSize = new System.Drawing.Size(684, 391);
+            ClientSize = new System.Drawing.Size(671, 473);
+            Controls.Add(btnAsociar);
+            Controls.Add(btnDetallar);
             Controls.Add(btnActividad);
             Controls.Add(btnSalir);
             Controls.Add(btnListar);
@@ -131,5 +157,7 @@
         private System.Windows.Forms.Button btnListar;
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Button btnActividad;
+        private System.Windows.Forms.Button btnDetallar;
+        private System.Windows.Forms.Button btnAsociar;
     }
 }

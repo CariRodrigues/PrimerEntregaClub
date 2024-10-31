@@ -1,6 +1,6 @@
 ﻿namespace PrimerEntregaClub
 {
-    partial class LoginForm
+    partial class FrmLogin
     {
         /// <summary>
         ///  Required designer variable.
@@ -52,7 +52,7 @@
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.Logo;
-            pictureBox1.Location = new System.Drawing.Point(143, 68);
+            pictureBox1.Location = new System.Drawing.Point(94, 70);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new System.Drawing.Size(191, 174);
             pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -63,7 +63,7 @@
             // 
             btnIngresar.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             btnIngresar.ForeColor = System.Drawing.Color.DodgerBlue;
-            btnIngresar.Location = new System.Drawing.Point(411, 244);
+            btnIngresar.Location = new System.Drawing.Point(411, 245);
             btnIngresar.Name = "btnIngresar";
             btnIngresar.Size = new System.Drawing.Size(143, 46);
             btnIngresar.TabIndex = 2;
@@ -75,9 +75,9 @@
             // 
             txtUsuario.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             txtUsuario.ForeColor = System.Drawing.Color.DodgerBlue;
-            txtUsuario.Location = new System.Drawing.Point(379, 107);
+            txtUsuario.Location = new System.Drawing.Point(344, 107);
             txtUsuario.Name = "txtUsuario";
-            txtUsuario.Size = new System.Drawing.Size(216, 25);
+            txtUsuario.Size = new System.Drawing.Size(251, 25);
             txtUsuario.TabIndex = 3;
             txtUsuario.Text = "Usuario";
             txtUsuario.TextChanged += txtUsuario_TextChanged;
@@ -88,9 +88,9 @@
             // 
             txtPass.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             txtPass.ForeColor = System.Drawing.Color.DodgerBlue;
-            txtPass.Location = new System.Drawing.Point(379, 177);
+            txtPass.Location = new System.Drawing.Point(344, 177);
             txtPass.Name = "txtPass";
-            txtPass.Size = new System.Drawing.Size(216, 25);
+            txtPass.Size = new System.Drawing.Size(251, 25);
             txtPass.TabIndex = 4;
             txtPass.Text = "Contraseña";
             txtPass.Enter += txtPass_Enter;
@@ -100,7 +100,7 @@
             // 
             errorProvider1.ContainerControl = this;
             // 
-            // LoginForm
+            // FrmLogin
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -112,7 +112,7 @@
             Controls.Add(lblLogin);
             FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             MaximizeBox = false;
-            Name = "LoginForm";
+            Name = "FrmLogin";
             StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             Text = "Login";
             Load += LoginForm_Load;

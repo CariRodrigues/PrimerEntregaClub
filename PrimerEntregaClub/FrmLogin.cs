@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PrimerEntregaClub
 {
-    public partial class LoginForm : Form
+    public partial class FrmLogin : Form
     {
-        public LoginForm()
+        public FrmLogin()
         {
             InitializeComponent();
         }

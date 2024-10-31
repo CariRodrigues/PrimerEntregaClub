@@ -25,7 +25,10 @@ namespace PrimerEntregaClub
 
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
+            FrmRegistro ventanaRegistro = new FrmRegistro();
 
+            ventanaRegistro.Show();//Se llama al de registro
+            this.Hide(); //se oculta al formulario principal
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
@@ -33,9 +36,12 @@ namespace PrimerEntregaClub
             Application.Exit();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnPagar_Click(object sender, EventArgs e)
         {
+            frmPagar ventanaDePago = new frmPagar();
 
+            ventanaDePago.Show();
+            this.Hide();
         }
     }
 }
